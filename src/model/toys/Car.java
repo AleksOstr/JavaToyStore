@@ -47,4 +47,9 @@ public class Car extends Toy {
     public int compareTo(Toy o) {
         return super.compareTo(o);
     }
+
+    @Override
+    public Car clone() throws CloneNotSupportedException {
+        return (Car) super.clone();
+    }
 }

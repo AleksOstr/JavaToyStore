@@ -47,4 +47,9 @@ public class SoftToy extends Toy {
     public int compareTo(Toy o) {
         return super.compareTo(o);
     }
+
+    @Override
+    public SoftToy clone() throws CloneNotSupportedException {
+        return (SoftToy) super.clone();
+    }
 }

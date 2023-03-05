@@ -1,6 +1,6 @@
 package model.toys;
 
-public abstract class Toy implements Comparable<Toy> {
+public abstract class Toy implements Comparable<Toy>, Cloneable {
     private Integer id;
     private String name;
     private Integer count;
@@ -36,5 +36,10 @@ public abstract class Toy implements Comparable<Toy> {
     @Override
     public int compareTo(Toy o) {
         return weight.compareTo(o.getWeight());
+    }
+
+    @Override
+    public Toy clone() throws CloneNotSupportedException {
+        return (Toy) super.clone();
     }
 }

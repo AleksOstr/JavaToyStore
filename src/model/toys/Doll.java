@@ -47,4 +47,9 @@ public class Doll extends Toy {
     public int compareTo(Toy o) {
         return super.compareTo(o);
     }
+
+    @Override
+    public Doll clone() throws CloneNotSupportedException {
+        return (Doll) super.clone();
+    }
 }
