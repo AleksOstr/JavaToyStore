@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="created toys">
+    <list default="true" id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="correction for Toys classes">
+      <change afterPath="$PROJECT_DIR$/src/model/store/PrizeWriter.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/model/store/ToyStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/toys/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Car.java" afterDir="false" />
@@ -35,17 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
@@ -68,7 +69,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678001558766</updated>
-      <workItem from="1678001559966" duration="6879000" />
+      <workItem from="1678001559966" duration="11433000" />
+      <workItem from="1678022646013" duration="4684000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678001711746</created>
@@ -84,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678007120877</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="correction for Toys classes">
+      <created>1678011255788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678011255788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="created toys" />
-    <option name="LAST_COMMIT_MESSAGE" value="created toys" />
+    <MESSAGE value="correction for Toys classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction for Toys classes" />
   </component>
 </project>

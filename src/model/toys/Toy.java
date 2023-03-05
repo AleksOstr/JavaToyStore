@@ -1,6 +1,6 @@
 package model.toys;
 
-public abstract class Toy {
+public abstract class Toy implements Comparable<Toy> {
     private Integer id;
     private String name;
     private Integer count;
@@ -33,4 +33,8 @@ public abstract class Toy {
         this.count = newCount;
     }
 
+    @Override
+    public int compareTo(Toy o) {
+        return weight.compareTo(o.getWeight());
+    }
 }

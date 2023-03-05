@@ -42,4 +42,9 @@ public class Car extends Toy {
         return String.format("%s \"%s\" Count: %d Chance to get: %d\n", this.toyType, this.getName(), this.getCount(),
                 this.getWeight());
     }
+
+    @Override
+    public int compareTo(Toy o) {
+        return super.compareTo(o);
+    }
 }
