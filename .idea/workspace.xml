@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Store/ToyStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/toys/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/toys/Doll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/toys/SoftToy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/toys/Toy.java" afterDir="false" />
+    <list default="true" id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="created toys">
+      <change afterPath="$PROJECT_DIR$/src/model/store/ToyStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/toys/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/toys/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Doll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/toys/SoftToy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/SoftToy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/toys/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Toy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678001558766</updated>
-      <workItem from="1678001559966" duration="4341000" />
+      <workItem from="1678001559966" duration="6879000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678001711746</created>
@@ -79,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678001711746</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created toys">
+      <created>1678007120877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678007120877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="created toys" />
+    <option name="LAST_COMMIT_MESSAGE" value="created toys" />
   </component>
 </project>

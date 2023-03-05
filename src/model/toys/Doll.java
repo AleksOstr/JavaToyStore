@@ -1,14 +1,15 @@
 package model.toys;
 
-public class Doll extends Toy{
+public class Doll extends Toy {
+    private String toyType;
+
     public Doll(Integer id, String name, Integer count, Integer weight) {
         super(id, name, count, weight);
-        super.toyType = "Doll";
+        this.toyType = "Doll";
     }
 
-    @Override
     public String getToyType() {
-        return super.getToyType();
+        return toyType;
     }
 
     @Override
@@ -38,6 +39,7 @@ public class Doll extends Toy{
 
     @Override
     public String toString() {
-        return super.toString();
+        return String.format("%s \"%s\" Count: %d Chance to get: %d\n", this.toyType, this.getName(), this.getCount(),
+                this.getWeight());
     }
 }

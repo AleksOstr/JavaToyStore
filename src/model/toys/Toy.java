@@ -1,11 +1,10 @@
 package model.toys;
 
 public abstract class Toy {
-    Integer id;
-    String toyType;
-    String name;
-    Integer count;
-    Integer weight;
+    private Integer id;
+    private String name;
+    private Integer count;
+    private Integer weight;
 
     public Toy(Integer id, String name, Integer count, Integer weight) {
         this.id = id;
@@ -14,7 +13,6 @@ public abstract class Toy {
         this.weight = weight;
     }
 
-    public String getToyType() {return toyType;}
     public String getName() {
         return name;
     }
@@ -35,8 +33,4 @@ public abstract class Toy {
         this.count = newCount;
     }
 
-    @Override
-    public String toString() {
-        return String.format("%s \"%s\" Count: %d Chance to win: %d", toyType, name, count, weight);
-    }
 }
