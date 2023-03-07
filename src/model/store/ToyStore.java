@@ -5,6 +5,7 @@ import model.toys.Doll;
 import model.toys.SoftToy;
 import model.toys.Toy;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -13,11 +14,13 @@ public class ToyStore {
     private ArrayList<Toy> prizes;
     private ArrayList<Toy> toys;
     private PrizeWriter prizeWriter;
+    private PrizeReader prizeReader;
 
-    public ToyStore(PrizeWriter prizeWriter) {
+    public ToyStore(PrizeWriter prizeWriter, PrizeReader prizeReader) {
         this.prizes = new ArrayList<>();
         this.toys = new ArrayList<>();
         this.prizeWriter = prizeWriter;
+        this.prizeReader = prizeReader;
     }
 
     private Integer createId() {
@@ -111,5 +114,9 @@ public class ToyStore {
             prizeWriter.writePrize(prizes.get(0));
             prizes.remove(0);
         }
+    }
+
+    public ArrayList<String> readAwardedPrizes() {
+        return prizeReader.readAwardedPrizes();
     }
 }

@@ -37,4 +37,8 @@ public class Controller {
     public ArrayList<Toy> getToys() {
         return toyStore.getToys();
     }
+
+    public ArrayList<String> readAwardedPrizes() {
+        return toyStore.readAwardedPrizes();
+    }
 }
