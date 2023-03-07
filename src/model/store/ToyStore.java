@@ -30,34 +30,55 @@ public class ToyStore {
         return max + 1;
     }
 
-    public void addSoftToy(String name, Integer count, Integer weight) {
-        toys.add(new SoftToy(createId(), name, count, weight));
+    public void addSoftToy(String name, Integer count, Integer weight) throws Exception {
+        SoftToy newSoftToy = new SoftToy(createId(), name, count, weight);
+        if (checkToyCount(newSoftToy)) {
+            throw new Exception("Wrong count value\n");
+        } else if (checkToyWeight(newSoftToy)) {
+            throw new Exception("Wrong weight value\n");
+        } else {
+            toys.add(newSoftToy);
+        }
     }
 
-    public void addCar(String name, Integer count, Integer weight) {
-        toys.add(new Car(createId(), name, count, weight));
+    public void addCar(String name, Integer count, Integer weight) throws Exception {
+        Car newCar = new Car(createId(), name, count, weight);
+        if (checkToyCount(newCar)) {
+            throw new Exception("Wrong count value\n");
+        } else if (checkToyWeight(newCar)) {
+            throw new Exception("Wrong weight value\n");
+        } else {
+            toys.add(newCar);
+        }
     }
 
-    public void addDoll(String name, Integer count, Integer weight) {
-        toys.add(new Doll(createId(), name, count, weight));
+    public void addDoll(String name, Integer count, Integer weight) throws Exception {
+        Doll newDoll = new Doll(createId(), name, count, weight);
+        if (checkToyCount(newDoll)) {
+            throw new Exception("Wrong count value\n");
+        } else if (checkToyWeight(newDoll)) {
+            throw new Exception("Wrong weight value\n");
+        } else {
+            toys.add(newDoll);
+        }
     }
 
     private void decreaseCount(Toy toy) {
         toy.setCount(toy.getCount() - 1);
     }
 
-    public void addToyToPrizesList(Toy toy) throws CloneNotSupportedException {
+    private void addToyToPrizesList(Toy toy) throws CloneNotSupportedException {
         Toy prize = toy.clone();
         prize.setCount(1);
         prizes.add(prize);
     }
 
-    public boolean checkToyCount(Toy toy) {
-        return toy.getCount() == 0;
+    private boolean checkToyCount(Toy toy) {
+        return toy.getCount() <= 0;
     }
 
-    public void removeToyFromToysList(Toy toy) {
-        if (checkToyCount(toy)) toys.remove(toy);
+    private boolean checkToyWeight(Toy toy) {
+        return toy.getWeight() < 1 || toy.getWeight() > 100;
     }
 
     public ArrayList<Toy> getPrizes() {
@@ -76,10 +97,9 @@ public class ToyStore {
                 try {
                     addToyToPrizesList(toy);
                     decreaseCount(toy);
-                    if (checkToyCount(toy)) removeToyFromToysList(toy);
+                    if (checkToyCount(toy)) toys.remove(toy);
                     return;
-                }
-                catch (CloneNotSupportedException exception) {
+                } catch (CloneNotSupportedException exception) {
                     System.out.println(exception.getMessage());
                 }
             }
