@@ -52,4 +52,9 @@ public class Doll extends Toy {
     public Doll clone() throws CloneNotSupportedException {
         return (Doll) super.clone();
     }
+
+    @Override
+    public void setWeight(Integer weight) {
+        super.setWeight(weight);
+    }
 }

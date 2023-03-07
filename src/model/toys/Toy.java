@@ -33,6 +33,10 @@ public abstract class Toy implements Comparable<Toy>, Cloneable {
         this.count = newCount;
     }
 
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
     @Override
     public int compareTo(Toy o) {
         return weight.compareTo(o.getWeight());

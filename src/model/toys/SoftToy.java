@@ -52,4 +52,9 @@ public class SoftToy extends Toy {
     public SoftToy clone() throws CloneNotSupportedException {
         return (SoftToy) super.clone();
     }
+
+    @Override
+    public void setWeight(Integer weight) {
+        super.setWeight(weight);
+    }
 }

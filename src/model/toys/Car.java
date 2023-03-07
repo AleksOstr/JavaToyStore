@@ -52,4 +52,9 @@ public class Car extends Toy {
     public Car clone() throws CloneNotSupportedException {
         return (Car) super.clone();
     }
+
+    @Override
+    public void setWeight(Integer weight) {
+        super.setWeight(weight);
+    }
 }
