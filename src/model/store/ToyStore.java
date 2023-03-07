@@ -5,7 +5,6 @@ import model.toys.Doll;
 import model.toys.SoftToy;
 import model.toys.Toy;
 
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -40,7 +39,7 @@ public class ToyStore {
         } else if (checkToyWeight(newSoftToy)) {
             throw new Exception("Wrong weight value\n");
         } else {
-            toys.add(newSoftToy);
+            this.toys.add(newSoftToy);
         }
     }
 
@@ -51,7 +50,7 @@ public class ToyStore {
         } else if (checkToyWeight(newCar)) {
             throw new Exception("Wrong weight value\n");
         } else {
-            toys.add(newCar);
+            this.toys.add(newCar);
         }
     }
 
@@ -62,7 +61,7 @@ public class ToyStore {
         } else if (checkToyWeight(newDoll)) {
             throw new Exception("Wrong weight value\n");
         } else {
-            toys.add(newDoll);
+            this.toys.add(newDoll);
         }
     }
 
@@ -84,36 +83,51 @@ public class ToyStore {
         return toy.getWeight() < 1 || toy.getWeight() > 100;
     }
 
-    public ArrayList<Toy> getPrizes() {
-        return prizes;
-    }
-
-    public ArrayList<Toy> getToys() {
-        return toys;
-    }
-
-    public void getRandomPrize() {
-        Collections.sort(toys);
-        int randInt = (new Random()).nextInt(100);
-        for (Toy toy : toys) {
-            if (randInt <= toy.getWeight()) {
-                try {
-                    addToyToPrizesList(toy);
-                    decreaseCount(toy);
-                    if (checkToyCount(toy)) toys.remove(toy);
-                    return;
-                } catch (CloneNotSupportedException exception) {
-                    System.out.println(exception.getMessage());
-                }
-            }
+    public ArrayList<Toy> getPrizes() throws Exception {
+        if (prizes.isEmpty()) {
+            throw new Exception("There's no toys\n");
+        } else {
+            return prizes;
         }
     }
 
-    public void releasePrize() {
+    public ArrayList<Toy> getToys() throws Exception {
+        if (toys.isEmpty()) {
+            throw new Exception("There's no toys\n");
+        } else {
+            return toys;
+        }
+    }
+
+    public void getRandomPrize() throws Exception {
+        if (toys.isEmpty()) {
+            throw new Exception("There's no available toys\n");
+        } else {
+            boolean isPrize = false;
+            Collections.sort(toys);
+            int randInt = (new Random()).nextInt(100);
+            for (Toy toy : toys) {
+                if (randInt <= toy.getWeight()) {
+                    try {
+                        isPrize = true;
+                        addToyToPrizesList(toy);
+                        decreaseCount(toy);
+                        if (checkToyCount(toy)) toys.remove(toy);
+                        return;
+                    } catch (CloneNotSupportedException exception) {
+                        System.out.println(exception.getMessage());
+                    }
+                }
+            }
+            if (!isPrize) throw new Exception("Prize wasn't played\n");
+        }
+    }
+
+    public void releasePrize() throws Exception {
         if (!prizes.isEmpty()) {
             prizeWriter.writePrize(prizes.get(0));
             prizes.remove(0);
-        }
+        } else throw new Exception("There's no prizes to release\n");
     }
 
     public ArrayList<String> readAwardedPrizes() {

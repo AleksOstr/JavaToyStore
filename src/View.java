@@ -19,8 +19,8 @@ public class View {
         return input.strip();
     }
 
-    private <E> void showList(List<E> list) {
-        for (E item : list) {
+    private void showList(List<Toy> list) {
+        for (Toy item : list) {
             System.out.println(item);
         }
     }
@@ -45,7 +45,10 @@ public class View {
                         showList(controller.getPrizes());
                         break;
                     case "3":
-                        showList(controller.readAwardedPrizes());
+                        ArrayList<String> lines = controller.readAwardedPrizes();
+                        for (String line : lines) {
+                            System.out.println(line);
+                        }
                         break;
                     case "4":
                         command = prompt("Choose an action:\n" +
@@ -58,30 +61,50 @@ public class View {
                                 int toyCount = Integer.parseInt(prompt("Enter number of toys\n"));
                                 int toyWeight = Integer.parseInt(prompt("Enter drop chance\n"));
                                 controller.addSoftToy(toyName, toyCount, toyWeight);
+                                System.out.println("New toy was added successfully");
                                 break;
                             case "2":
                                 toyName = prompt("Enter toy name\n");
                                 toyCount = Integer.parseInt(prompt("Enter number of toys\n"));
                                 toyWeight = Integer.parseInt(prompt("Enter drop chance\n"));
                                 controller.addCar(toyName, toyCount, toyWeight);
+                                System.out.println("New toy was added successfully");
                                 break;
                             case "3":
                                 toyName = prompt("Enter toy name\n");
                                 toyCount = Integer.parseInt(prompt("Enter number of toys\n"));
                                 toyWeight = Integer.parseInt(prompt("Enter drop chance\n"));
                                 controller.addDoll(toyName, toyCount, toyWeight);
+                                System.out.println("New toy was added successfully");
+                                break;
+                            default:
+                                System.out.println("Wrong command. Try again!\n");
                                 break;
                         }
                         break;
                     case "5":
                         controller.getRandomPrize();
+                        System.out.println("Prize was played successfully");
                         break;
                     case "6":
                         controller.releasePrize();
+                        System.out.println("Prize was released successfully");
                         break;
-                    case "7"
-
+                    case "7":
+                        ArrayList<Toy> availableToys = controller.getToys();
+                        showList(availableToys);
+                        Integer toyId = Integer.parseInt(prompt("Enter toy id\n"));
+                        Integer newWeight = Integer.parseInt(prompt("Enter new toy drop chance\n"));
+                        controller.changeToyWeight(toyId, newWeight);
+                        break;
+                    case "8":
+                        return;
+                    default:
+                        System.out.println("Wrong command. Try again!\n");
+                        break;
                 }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
     }

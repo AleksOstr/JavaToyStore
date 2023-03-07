@@ -39,8 +39,8 @@ public class SoftToy extends Toy {
 
     @Override
     public String toString() {
-        return String.format("%s \"%s\" Count: %d Chance to get: %d\n", this.toyType, this.getName(), this.getCount(),
-                this.getWeight());
+        return String.format("ID: %d %s \"%s\" Count: %d Chance to get: %d\n", this.getId(), this.toyType,
+                this.getName(), this.getCount(), this.getWeight());
     }
 
     @Override

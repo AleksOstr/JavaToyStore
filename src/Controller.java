@@ -22,19 +22,19 @@ public class Controller {
         toyStore.addDoll(name, count, weight);
     }
 
-    public void getRandomPrize() {
+    public void getRandomPrize() throws Exception {
         toyStore.getRandomPrize();
     }
 
-    public void releasePrize() {
+    public void releasePrize() throws Exception {
         toyStore.releasePrize();
     }
 
-    public ArrayList<Toy> getPrizes() {
+    public ArrayList<Toy> getPrizes() throws Exception {
         return toyStore.getPrizes();
     }
 
-    public ArrayList<Toy> getToys() {
+    public ArrayList<Toy> getToys() throws Exception {
         return toyStore.getToys();
     }
 
@@ -42,7 +42,7 @@ public class Controller {
         return toyStore.readAwardedPrizes();
     }
 
-    public void changeToyWweight(Integer id, Integer newWeight) throws Exception {
+    public void changeToyWeight(Integer id, Integer newWeight) throws Exception {
         toyStore.changeToyWeight(id, newWeight);
     }
 }
