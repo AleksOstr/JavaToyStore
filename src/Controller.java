@@ -41,4 +41,8 @@ public class Controller {
     public ArrayList<String> readAwardedPrizes() {
         return toyStore.readAwardedPrizes();
     }
+
+    public void changeToyWweight(Integer id, Integer newWeight) throws Exception {
+        toyStore.changeToyWeight(id, newWeight);
+    }
 }

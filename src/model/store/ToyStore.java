@@ -119,4 +119,17 @@ public class ToyStore {
     public ArrayList<String> readAwardedPrizes() {
         return prizeReader.readAwardedPrizes();
     }
+
+    public void changeToyWeight(Integer id, Integer newWeight) throws Exception {
+        if (newWeight < 1 || newWeight > 100) {
+            throw new Exception("Wrong weight value\n");
+        } else {
+            for (Toy toy : toys) {
+                if (toy.getId().equals(id)) {
+                    toy.setWeight(newWeight);
+                    break;
+                }
+            }
+        }
+    }
 }

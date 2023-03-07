@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="add PrizeReader">
-      <change afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
+    <list default="true" id="80b2c55b-9286-4c80-9e9d-b70acab711cc" name="Changes" comment="add weight setter">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/store/ToyStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/store/ToyStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="" />
+      <changelist id="80b2c55b-9286-4c80-9e9d-b70acab711cc" name="Changes" comment="add weight setter" />
       <created>1678001558766</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -68,6 +70,7 @@
       <workItem from="1678022646013" duration="6868000" />
       <workItem from="1678160899373" duration="287000" />
       <workItem from="1678183690676" duration="5830000" />
+      <workItem from="1678196490869" duration="482000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678001711746</created>
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678187649022</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add weight setter">
+      <created>1678196251312</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678196251312</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +169,7 @@
     <MESSAGE value="ToyStore class correction" />
     <MESSAGE value="add Controller" />
     <MESSAGE value="add PrizeReader" />
-    <option name="LAST_COMMIT_MESSAGE" value="add PrizeReader" />
+    <MESSAGE value="add weight setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add weight setter" />
   </component>
 </project>
