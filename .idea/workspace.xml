@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9757973-abe0-4317-9531-2c729f1fea6f" name="Changes" comment="add PrizeWriter">
-      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/store/ToyStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/toys/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/toys/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/toys/SoftToy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/SoftToy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/toys/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/toys/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +65,7 @@
       <updated>1678001558766</updated>
       <workItem from="1678001559966" duration="11433000" />
       <workItem from="1678022646013" duration="6868000" />
+      <workItem from="1678160899373" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1678001711746</created>

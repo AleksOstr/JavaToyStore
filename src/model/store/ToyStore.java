@@ -42,7 +42,7 @@ public class ToyStore {
         toys.add(new Doll(createId(), name, count, weight));
     }
 
-    public void decreaseCount(Toy toy) {
+    private void decreaseCount(Toy toy) {
         toy.setCount(toy.getCount() - 1);
     }
 
